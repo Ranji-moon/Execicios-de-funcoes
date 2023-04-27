@@ -54,14 +54,16 @@ alert(retornarPar(8))
 // juntamente com uma versão dela em letras maiúsculas
 
 //Escreva uma arrow function que recebe um parâmetro e imprime no console esse parâmetro
-let desafioA = (parâmetro) => {//modelo arrow function
-    return parâmetro
+let imprimirSoma = (conteudo) => {//modelo arrow function
+    return conteudo
 }
-alert(desafioA('oito'))
+//alert(desafioA('oito'))
 
 //Escreva outra arrow function que recebe dois valores como parâmetros mas nenhum retorno.
 //Faça a soma entre esses valores e chame a sua primeira função mandando este resultado da soma como entrada para imprimi-lo
-let desafioB = (parametro1, parametro2)  => {//modelo arrow function
-    return parâmetro
+let desafioB = (num1, num2)  => {//modelo arrow function
+   let soma = num1 + num2
+   let resultado = imprimirSoma(soma);
+   alert(resultado)
 }
-alert(desafioA('oito'))
+console.log(desafioB(4, 5))
